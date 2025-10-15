@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header className="flex justify-between items-center py-8 px-15 bg-dark text-beige">
-      <a href="" className="text-primary text-3xl font-bold">
+      <a href="/" className="text-primary text-3xl font-bold">
         Red<span className="text-gold">Sky</span>
       </a>
       <div className="flex gap-10">

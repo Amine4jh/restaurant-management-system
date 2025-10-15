@@ -4,10 +4,12 @@ import Features from "../components/sections/Features";
 import Hero from "../components/sections/Hero";
 import Restaurant from "../components/sections/Restaurant";
 import Footer from "../layouts/Footer";
+import Header from "../layouts/header";
 
 const HomePage = () => {
   return (
     <>
+      <Header />
       <Hero />
       <Restaurant />
       <Features />
