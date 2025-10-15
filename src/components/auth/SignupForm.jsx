@@ -150,6 +150,12 @@ const SignupForm = () => {
           Submit
         </button>
       </div>
+      <p className="text-center mt-5">
+        Do you already have an account?{" "}
+        <Link to={"/login"} className="text-primary underline">
+          Login
+        </Link>
+      </p>
     </form>
   );
 };

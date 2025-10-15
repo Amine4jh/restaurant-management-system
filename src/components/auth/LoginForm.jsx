@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const LoginForm = () => {
   return (
     <form
@@ -45,10 +47,7 @@ const LoginForm = () => {
             id="remember"
             className="w-5 h-5 accent-primary cursor-pointer"
           />
-          <label
-            htmlFor="remember"
-            className="cursor-pointer block text-start"
-          >
+          <label htmlFor="remember" className="cursor-pointer block text-start">
             Remember me!
           </label>
         </div>
@@ -59,6 +58,12 @@ const LoginForm = () => {
           Login
         </button>
       </div>
+      <p className="text-center mt-5">
+        You don't have an account?{" "}
+        <Link to={"/signup"} className="text-primary underline">
+          Sign up
+        </Link>
+      </p>
     </form>
   );
 };
