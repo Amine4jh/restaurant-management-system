@@ -2,8 +2,8 @@ import React from "react";
 
 function RestaurantCards() {
   return (
-    <div className="my-20 flex items-baseline justify-between">
-      <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl">
+    <div className="my-20 flex items-baseline justify-evenly">
+      <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
         <img
           src="./images/salads.jpg"
           alt="Salads"
@@ -17,7 +17,7 @@ function RestaurantCards() {
           </p>
         </div>
       </div>
-      <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl">
+      <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
         <img
           src="./images/pasta.jpg"
           alt="Pasta"
@@ -29,7 +29,7 @@ function RestaurantCards() {
           <p className="opacity-75 my-2">Creamy, cheesy, and made with love.</p>
         </div>
       </div>
-      <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl">
+      <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
         <img
           src="./images/desserts.jpg"
           alt="Desserts"
@@ -41,7 +41,7 @@ function RestaurantCards() {
           <p className="opacity-75 my-2">End your meal with a sweet treat.</p>
         </div>
       </div>
-      <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl">
+      <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
         <img
           src="./images/drinks.jpg"
           alt="Drinks"
