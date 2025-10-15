@@ -15,7 +15,7 @@ const About = () => {
       <div className="flex justify-between px-10 mt-20">
         <div className="transition duration-150 ease hover:scale-110">
           <img
-            src="./images/about.jpg"
+            src="./images/about.webp"
             alt="About Image"
             width={530}
             className="rounded shadow-xl"

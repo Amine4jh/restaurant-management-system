@@ -5,7 +5,7 @@ function RestaurantCards() {
     <div className="my-20 flex items-baseline justify-evenly">
       <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
         <img
-          src="./images/salads.jpg"
+          src="./images/salads.webp"
           alt="Salads"
           className="rounded-t"
           width={250}
@@ -19,7 +19,7 @@ function RestaurantCards() {
       </div>
       <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
         <img
-          src="./images/pasta.jpg"
+          src="./images/pasta.webp"
           alt="Pasta"
           className="rounded-t"
           width={250}
@@ -31,7 +31,7 @@ function RestaurantCards() {
       </div>
       <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
         <img
-          src="./images/desserts.jpg"
+          src="./images/desserts.webp"
           alt="Desserts"
           className="rounded-t"
           width={250}
@@ -43,7 +43,7 @@ function RestaurantCards() {
       </div>
       <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
         <img
-          src="./images/drinks.jpg"
+          src="./images/drinks.webp"
           alt="Drinks"
           className="rounded-t"
           width={250}

@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="bg-[url(./images/home-bg.png)] bg-no-repeat bg-cover">
+    <div className="bg-[url(./images/home-bg.webp)] bg-no-repeat bg-cover">
       <div className="backdrop-brightness-30 px-100 py-65 text-center">
         <h1 className="text-beige text-6xl font-bold">
           Experience the Taste of Perfection
