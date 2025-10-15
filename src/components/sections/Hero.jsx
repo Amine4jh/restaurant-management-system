@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="bg-[url(./images/home-bg.webp)] bg-no-repeat bg-cover">
@@ -14,12 +16,12 @@ const Hero = () => {
           got you covered.
         </p>
         <div className="flex items-center justify-center gap-5">
-          <a
-            href=""
+          <Link
+            to={"/signup"}
             className="text-xl px-5 py-2 bg-gold text-dark border-2 border-gold rounded font-bold hover:bg-transparent hover:text-gold transition duration-300 ease hover:scale-110"
           >
             Get Started For Free!
-          </a>
+          </Link>
         </div>
       </div>
     </div>

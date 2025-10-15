@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const SignupForm = () => {
   return (
     <form
@@ -130,15 +132,15 @@ const SignupForm = () => {
           />
           <label htmlFor="remember" className="cursor-pointer block text-start">
             By Signing up, you agree to our{" "}
-            <a href="" className="text-primary underline">
+            <Link to={"/signup"} className="text-primary underline">
               {" "}
               Terms of Service
-            </a>{" "}
+            </Link>{" "}
             and{" "}
-            <a href="" className="text-primary underline">
+            <Link to={"/signup"} className="text-primary underline">
               {" "}
               Privacy Policy
-            </a>
+            </Link>
           </label>
         </div>
         <button
