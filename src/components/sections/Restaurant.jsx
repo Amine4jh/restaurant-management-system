@@ -2,7 +2,7 @@ import RestaurantCards from "../homepage/RestaurantCards";
 
 const Restaurant = () => {
   return (
-    <div className="bg-beige text-dark text-center p-30">
+    <div className="bg-beige text-dark text-center px-30 py-50">
       <h1 className="text-4xl font-bold">
         <span className="text-primary">Our</span> Best Picks
       </h1>
