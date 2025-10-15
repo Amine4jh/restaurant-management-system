@@ -3,6 +3,7 @@ import Contact from "../components/sections/contact";
 import Features from "../components/sections/Features";
 import Hero from "../components/sections/Hero";
 import Restaurant from "../components/sections/Restaurant";
+import Footer from "../layouts/Footer";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Features />
       <About />
       <Contact />
+      <Footer />
     </>
   );
 };
