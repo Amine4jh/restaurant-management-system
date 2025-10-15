@@ -47,7 +47,7 @@ const LoginForm = () => {
           />
           <label
             htmlFor="remember"
-            className="cursor-pointer block text-start font-semibold"
+            className="cursor-pointer block text-start"
           >
             Remember me!
           </label>
@@ -56,7 +56,7 @@ const LoginForm = () => {
           type="submit"
           className="bg-primary border-2 border-transparent py-3 text-beige font-bold w-full mt-5 rounded transition duration-150 ease hover:bg-transparent hover:text-primary hover:border-primary cursor-pointer"
         >
-          Submit
+          Login
         </button>
       </div>
     </form>
