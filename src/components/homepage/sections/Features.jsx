@@ -1,4 +1,4 @@
-import FeaturesCards from "../homepage/FeaturesCards";
+import FeaturesCards from "../common/FeaturesCards";
 
 const Features = () => {
   return (
