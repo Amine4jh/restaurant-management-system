@@ -3,6 +3,7 @@ import HomePage from "./pages/homePage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Layout from "./components/Layout";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 
 function App() {
   const Routing = createBrowserRouter([
@@ -13,6 +14,7 @@ function App() {
         { path: "*", element: <HomePage /> },
         { path: "login", element: <Login /> },
         { path: "signup", element: <Signup /> },
+        { path: "admin", element: <AdminDashboard /> },
       ],
     },
   ]);

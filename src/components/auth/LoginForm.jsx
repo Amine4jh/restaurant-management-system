@@ -5,10 +5,12 @@ const LoginForm = () => {
     <form
       action=""
       method="post"
-      className="p-10 bg-dark rounded shadow-2xl w-130 mx-auto text-beige"
+      className="p-10 bg-dark rounded shadow-2xl md:w-130 w-100 mx-auto text-beige"
     >
-      <h1 className="text-4xl font-bold text-center text-beige mb-15">Login</h1>
-      <div className="flex flex-col items-start text-xl">
+      <h1 className="md:text-4xl text-3xl font-bold text-center text-beige mb-15">
+        Login
+      </h1>
+      <div className="flex flex-col items-start md:text-xl">
         <div className="w-full">
           <label
             htmlFor="email"
@@ -21,7 +23,7 @@ const LoginForm = () => {
             name="email"
             id="email"
             placeholder="Enter Your Email..."
-            className="w-full p-3 outline-0 brightness-120 mt-2 bg-dark rounded focus:brightness-80 border border-transparent focus:border-beige"
+            className="w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige"
             required
           />
         </div>
@@ -37,7 +39,7 @@ const LoginForm = () => {
             name="password"
             id="password"
             placeholder="Enter Your Password..."
-            className="w-full p-3 outline-0 brightness-120 mt-2 bg-dark rounded focus:brightness-80 border border-transparent focus:border-beige"
+            className="w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige"
             required
           />
         </div>

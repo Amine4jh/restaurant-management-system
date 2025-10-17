@@ -5,13 +5,13 @@ const SignupForm = () => {
     <form
       action=""
       method="post"
-      className="p-10 bg-dark rounded shadow-2xl w-160 mx-auto text-beige"
+      className="p-10 bg-dark rounded shadow-2xl md:w-160 w-110 mx-auto text-beige"
     >
-      <h1 className="text-4xl font-bold text-center text-beige mb-15">
+      <h1 className="md:text-4xl text-3xl font-bold text-center text-beige mb-15">
         Sign up
       </h1>
-      <div className="flex flex-col items-start text-xl">
-        <div className="w-full flex items-center gap-5">
+      <div className="flex flex-col items-start md:text-xl">
+        <div className="w-full flex md:flex-row flex-col items-center gap-5">
           <div className="w-full">
             <label
               htmlFor="firstName"
@@ -24,7 +24,7 @@ const SignupForm = () => {
               name="firstName"
               id="firstName"
               placeholder="Enter Your First Name..."
-              className="w-full p-3 outline-0 brightness-120 mt-2 bg-dark rounded focus:brightness-80 border border-transparent focus:border-beige"
+              className="w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige"
               required
             />
           </div>
@@ -40,7 +40,7 @@ const SignupForm = () => {
               name="lastName"
               id="lastName"
               placeholder="Enter Your Last Name..."
-              className="w-full p-3 outline-0 brightness-120 mt-2 bg-dark rounded focus:brightness-80 border border-transparent focus:border-beige"
+              className="w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige"
               required
             />
           </div>
@@ -56,7 +56,7 @@ const SignupForm = () => {
             type="date"
             name="birth"
             id="birth"
-            className="w-full p-3 outline-0 brightness-120 mt-2 bg-dark rounded focus:brightness-80 border border-transparent focus:border-beige"
+            className="w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige"
             required
           />
         </div>
@@ -72,7 +72,7 @@ const SignupForm = () => {
             name="email"
             id="email"
             placeholder="Enter Your Email..."
-            className="w-full p-3 outline-0 brightness-120 mt-2 bg-dark rounded focus:brightness-80 border border-transparent focus:border-beige"
+            className="w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige"
             required
           />
         </div>
@@ -88,7 +88,7 @@ const SignupForm = () => {
             name="password"
             id="password"
             placeholder="Enter Your Password..."
-            className="w-full p-3 outline-0 brightness-120 mt-2 bg-dark rounded focus:brightness-80 border border-transparent focus:border-beige"
+            className="w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige"
             required
           />
         </div>
@@ -104,7 +104,7 @@ const SignupForm = () => {
             name="confirmPassword"
             id="confirmPassword"
             placeholder="Confirm Your Password..."
-            className="w-full p-3 outline-0 brightness-120 mt-2 bg-dark rounded focus:brightness-80 border border-transparent focus:border-beige"
+            className="w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige"
             required
           />
         </div>

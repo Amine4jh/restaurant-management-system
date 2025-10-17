@@ -2,7 +2,7 @@ const ContactForm = () => {
   return (
     <form
       action=""
-      className="flex flex-col items-start p-10 bg-beige rounded shadow w-130 mx-auto mt-20 text-xl"
+      className="flex flex-col items-start p-10 bg-beige rounded shadow md:w-130 w-90 mx-auto mt-20 lg:text-xl md:text-lg text-base"
     >
       <div className="w-full">
         <label
