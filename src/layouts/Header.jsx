@@ -1,12 +1,27 @@
+import { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [nav, setNav] = useState(true);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
     <header className="flex justify-between items-center py-8 px-15 bg-dark text-beige">
-      <Link to={"/"} className="text-primary text-3xl font-bold">
-        Red<span className="text-gold">Sky</span>
-      </Link>
-      <div className="flex gap-10">
+      <div className="flex items-center gap-5">
+        {/* NavBar Icon (Menu) */}
+        <div onClick={handleNav} className="block lg:hidden">
+          <AiOutlineMenu size={25} />
+        </div>
+
+        <Link to={"/"} className="text-primary text-3xl font-bold">
+          Red<span className="text-gold">Sky</span>
+        </Link>
+      </div>
+      <div className="hidden gap-10 lg:flex">
         <Link
           className="border-b-2 font-semibold border-transparent hover:border-lightRed py-2 hover:text-lightRed transition duration-300 ease hover:scale-110"
           to={"/"}
@@ -45,6 +60,38 @@ const Header = () => {
         >
           Sign Up
         </Link>
+      </div>
+
+      {/* Mobile NavBar */}
+      <div
+        className={
+          !nav
+            ? "fixed top-0 start-0 w-[60%] h-full border-r p-4 bg-dark ease-in-out duration-500 z-1"
+            : "fixed left-[-100%]"
+        }
+      >
+        <div className="flex items-center justify-between">
+          <Link to={"/"} className="text-primary text-3xl font-bold">
+            Red<span className="text-gold">Sky</span>
+          </Link>
+          <div onClick={handleNav} className="block lg:hidden">
+            <AiOutlineClose size={20} />
+          </div>
+        </div>
+        <div className="py-4">
+          <Link className="border-b font-semibold py-6 px-2 block" to={"/"}>
+            Restaurant
+          </Link>
+          <Link className="border-b font-semibold py-6 px-2 block" to={"/"}>
+            Features
+          </Link>
+          <Link className="border-b font-semibold py-6 px-2 block" to={"/"}>
+            About
+          </Link>
+          <Link className="font-semibold py-6 px-2 block" to={"/"}>
+            Contact
+          </Link>
+        </div>
       </div>
     </header>
   );
