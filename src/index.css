@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #C0392B;
-  --color-lightRed: #E74C3C;
+  --color-primary: #c0392b;
+  --color-lightRed: #e74c3c;
 
   --color-dark: #18181b;
-  --color-darkGray: #2C3E50;
-  --color-lightGray: #ECF0F1;
-  --color-white: #FFFFFF;
+  --color-darkGray: #2c3e50;
+  --color-lightGray: #ecf0f1;
+  --color-white: #ffffff;
 
-  --color-gold: #F1C40F;
-  --color-beige: #FFF5E1;
+  --color-gold: #f1c40f;
+  --color-beige: #fff5e1;
 }
 
 /* NavLink react-router-dom */
@@ -19,4 +19,20 @@
 }
 #navlink.active {
   @apply bg-dark text-lightRed border-lightRed;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @apply w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige;
+}
+input[type="checkbox"] {
+  @apply w-5 h-5 accent-primary cursor-pointer;
+}
+input.input-error {
+  @apply border-lightRed focus:border-lightRed;
+}
+button:disabled {
+  @apply opacity-35 hover:cursor-progress;
 }
