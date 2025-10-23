@@ -19,6 +19,9 @@ const LoginForm = () => {
     >
       {({ isSubmitting }) => (
         <Form className="p-10 bg-dark rounded shadow-2xl md:w-130 w-100 mx-auto text-beige">
+          <h1 className="md:text-4xl text-3xl font-bold text-center text-beige mb-15">
+            Login
+          </h1>
           <CustomInput
             label="Email"
             name="email"

@@ -23,6 +23,7 @@
 
 /* Inputs */
 input[type="text"],
+input[type="date"],
 input[type="email"],
 input[type="password"] {
   @apply w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige;
