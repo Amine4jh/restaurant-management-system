@@ -13,14 +13,6 @@
   --color-beige: #fff5e1;
 }
 
-/* NavLink react-router-dom */
-#navlink {
-  @apply p-4 flex items-center gap-5 text-beige font-semibold border-l-3 border-transparent transition duration-150 ease-in hover:text-lightRed;
-}
-#navlink.active {
-  @apply bg-dark text-lightRed border-lightRed;
-}
-
 /* Inputs */
 @layer base {
   input[type="number"]::-webkit-inner-spin-button,

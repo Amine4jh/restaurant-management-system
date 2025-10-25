@@ -1,5 +1,4 @@
 import AdminHeader from "./AdminHeader";
-import AdminNav from "./AdminNav";
 
 const AdminDashboard = () => {
   return (

@@ -4,9 +4,6 @@ import { IoIosSearch } from "react-icons/io";
 const AdminHeader = () => {
   return (
     <header className="flex justify-between items-center py-8 px-15 bg-dark text-beige">
-      <Link to={"/"} className="text-primary text-3xl font-bold">
-        Red<span className="text-gold">Sky</span>
-      </Link>
       <form action="" className="relative flex gap-2">
         <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
           <IoIosSearch className="text-lg text-beige" />

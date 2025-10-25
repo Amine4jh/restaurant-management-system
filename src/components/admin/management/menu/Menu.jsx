@@ -1,11 +1,11 @@
-import AddMenuForm from "./AddMenuForm"
+import AddMenuForm from "./AddMenuForm";
 
 const Menu = () => {
-  return(
-    <div className="flex-4 bg-beige pt-5">
+  return (
+    <div className="flex-4 bg-beige p-10">
       <AddMenuForm />
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;
