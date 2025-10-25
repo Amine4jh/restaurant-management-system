@@ -4,10 +4,15 @@ import { CgPushChevronLeftO, CgPushChevronRightO } from "react-icons/cg";
 import { MdOutlineMoreVert } from "react-icons/md";
 import { NavLink, Link } from "react-router-dom";
 
-export const SideBar = ({ children }) => {
+export const SideBar = ({ children, sendExpandedStatut }) => {
   const [expanded, setExpanded] = useState(true);
+
+  const handleExpand = () => {
+    setExpanded(!expanded);
+    sendExpandedStatut(expanded);
+  };
   return (
-    <aside className="h-screen">
+    <aside className="h-screen fixed top-0 left-0 z-1">
       <nav className="h-full flex flex-col bg-dark py-3 border-r border-beige">
         <div className="px-4 pb-4 border-b text-beige flex justify-between items-center">
           <Link
@@ -28,7 +33,7 @@ export const SideBar = ({ children }) => {
               <img src="./images/logo-icon.webp" alt="" />
             </Link>
             <button
-              onClick={() => setExpanded(!expanded)}
+              onClick={handleExpand}
               className="p-1.5 text-2xl hover:bg-darkGray rounded-lg cursor-pointer"
             >
               {expanded ? <CgPushChevronLeftO /> : <CgPushChevronRightO />}

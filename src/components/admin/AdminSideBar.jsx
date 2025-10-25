@@ -11,9 +11,14 @@ import {
   MdOutlineTableRestaurant,
 } from "react-icons/md";
 
-const AdminSideBar = () => {
+const AdminSideBar = ({ isExpanded }) => {
+  // Just for pass the extend statut to AdminLayout
+  const handleMessage = (sendExpandedStatut) => {
+    isExpanded(sendExpandedStatut);
+  };
+
   return (
-    <SideBar>
+    <SideBar sendExpandedStatut={handleMessage}>
       <SideBarItems
         to="/admin"
         icon={<MdOutlineDashboard />}

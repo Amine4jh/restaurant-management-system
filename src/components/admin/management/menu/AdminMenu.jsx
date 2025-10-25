@@ -1,6 +1,6 @@
 import AddMenuForm from "./AddMenuForm";
 
-const Menu = () => {
+const AdminMenu = () => {
   return (
     <div className="flex-4 bg-beige p-10">
       <AddMenuForm />
@@ -8,4 +8,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default AdminMenu;
