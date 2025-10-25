@@ -29,7 +29,7 @@ const AdminNav = () => {
       </h6>
       <NavLink
         id="navlink"
-        to="/admin/"
+        to="/admin/menu"
         end
         className={({ isActive }) => (isActive ? "active" : "")}
       >

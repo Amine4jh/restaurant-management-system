@@ -1,9 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/homePage";
+import HomePage from "./pages/HomePage";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Layout from "./components/Layout";
-import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminDashboard from "./components/admin/AdminDashboard";
+import AdminLayout from "./pages/AdminLayout";
+import Menu from "./components/admin/management/menu/Menu";
 
 function App() {
   const Routing = createBrowserRouter([
@@ -14,7 +16,15 @@ function App() {
         { path: "*", element: <HomePage /> },
         { path: "login", element: <Login /> },
         { path: "signup", element: <Signup /> },
-        { path: "admin", element: <AdminDashboard /> },
+        {
+          path: "/admin",
+          element: <AdminLayout />,
+          children: [
+            { index: true, element: <AdminDashboard /> },
+            { path: "/admin/dashboard", element: <AdminDashboard /> },
+            { path: "/admin/menu", element: <Menu /> },
+          ],
+        },
       ],
     },
   ]);

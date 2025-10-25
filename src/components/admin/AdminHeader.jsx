@@ -12,7 +12,7 @@ const AdminHeader = () => {
           <IoIosSearch className="text-lg text-beige" />
         </div>
         <input
-          type="text"
+          type="search"
           name="search"
           id="search"
           placeholder="Search..."
