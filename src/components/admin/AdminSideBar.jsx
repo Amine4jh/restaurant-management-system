@@ -12,7 +12,7 @@ import {
 } from "react-icons/md";
 
 const AdminSideBar = ({ isExpanded }) => {
-  // Just for pass the extend statut to AdminLayout
+  // Just for pass the extend statut to "AdminLayout"
   const handleMessage = (sendExpandedStatut) => {
     isExpanded(sendExpandedStatut);
   };
@@ -30,14 +30,14 @@ const AdminSideBar = ({ isExpanded }) => {
         icon={<MdOutlineRestaurantMenu />}
         text="Menu"
       />
-      <SideBarItems to="/admin/" icon={<MdOutlineListAlt />} text="Orders" />
+      <SideBarItems to="/admin/orders" icon={<MdOutlineListAlt />} text="Orders" />
       <SideBarItems
-        to="/admin/"
+        to="/admin/reservations"
         icon={<MdOutlinePhonelink />}
         text="Reservations"
       />
       <SideBarItems
-        to="/admin/"
+        to="/admin/tables"
         icon={<MdOutlineTableRestaurant />}
         text="Tables"
       />
