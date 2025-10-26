@@ -1,6 +1,4 @@
-import React from "react";
-
-function RestaurantCards() {
+const RestaurantCards = () => {
   return (
     <div className="my-20 lg:flex-row lg:gap-0 flex gap-10 flex-col items-center justify-evenly">
       <div className="w-[250px] rounded shadow hover:scale-110 transition duration-150 ease hover:shadow-xl bg-amber-50">
@@ -69,6 +67,6 @@ function RestaurantCards() {
       </div>
     </div>
   );
-}
+};
 
 export default RestaurantCards;
