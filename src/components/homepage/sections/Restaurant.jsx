@@ -1,4 +1,4 @@
-import RestaurantCards from "../common/RestaurantCards";
+import RestaurantCard from "../common/RestaurantCard";
 
 const Restaurant = () => {
   return (
@@ -12,7 +12,28 @@ const Restaurant = () => {
           bursting with flavor. Whether you're craving something savory or
           sweet, there's something for everyone.
         </p>
-        <RestaurantCards />
+        <div className="my-20 lg:flex-row lg:gap-0 flex gap-10 flex-col items-center justify-evenly">
+          <RestaurantCard
+            image="./images/salads.webp"
+            title="Fresh Salads"
+            desc="A mix of greens, veggies, and dressings for a healthy start."
+          />
+          <RestaurantCard
+            image="./images/pasta.webp"
+            title="Pasta Lovers"
+            desc="Creamy, cheesy, and made with love."
+          />
+          <RestaurantCard
+            image="./images/desserts.webp"
+            title="Desserts"
+            desc="End your meal with a sweet treat."
+          />
+          <RestaurantCard
+            image="./images/drinks.webp"
+            title="Drinks"
+            desc="Refreshing beverages to complement your meal."
+          />
+        </div>
       </div>
     </div>
   );

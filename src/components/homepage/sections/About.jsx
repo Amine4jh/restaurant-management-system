@@ -1,4 +1,4 @@
-import AboutCards from "../common/AboutCards";
+import AboutCard from "../common/AboutCard";
 
 const About = () => {
   return (
@@ -24,7 +24,24 @@ const About = () => {
             />
             <p className="opacity-50 mt-2">A photo of the restaurant team.</p>
           </div>
-          <AboutCards />
+          <div className="flex flex-col gap-5 text-start">
+            <AboutCard
+              title="Our Vision"
+              desc="Empowering restaurants with smarter tools."
+            />
+            <AboutCard
+              title="Our Values"
+              desc="Quality, innovation, and customer satisfaction."
+            />
+            <AboutCard
+              title="Our Mission"
+              desc="To deliver unforgettable dining experiences."
+            />
+            <AboutCard
+              title="Our Promise"
+              desc="Exceptional service and a taste you'll always remember."
+            />
+          </div>
         </div>
       </div>
     </div>
