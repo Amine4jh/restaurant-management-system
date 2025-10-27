@@ -1,11 +1,20 @@
 import { SideBarContext, useExpandedContext } from "../context";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { CgPushChevronLeftO, CgPushChevronRightO } from "react-icons/cg";
 import { MdOutlineMoreVert } from "react-icons/md";
 import { NavLink, Link } from "react-router-dom";
 
 export const SideBar = ({ children, sendExpandedStatut }) => {
   const [expanded, setExpanded] = useState(true);
+
+  // When on mobile navbar close
+  useEffect(() => {
+    if (window.innerWidth < 1280) {
+      setExpanded(false);
+    } else {
+      setExpanded(true);
+    }
+  }, []);
 
   const handleExpand = () => {
     setExpanded(!expanded);
