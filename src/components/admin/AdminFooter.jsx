@@ -1,8 +1,12 @@
 const AdminFooter = () => {
   return (
-    <footer>
-      {/* Do Not Forget To Add A Real Footer */}
-      This is Footer
+    <footer className="bg-beige text-dark">
+      <p className="text-center md:text-base text-sm opacity-50 pt-10">
+        © 2025 <b>RedSky</b>. All rights reserved.
+      </p>
+      <p className="text-center md:text-base text-sm opacity-50">
+        Powered by <b>HeroSolve Dev.</b>
+      </p>
     </footer>
   );
 };

@@ -7,7 +7,7 @@ import { NavLink, Link } from "react-router-dom";
 export const SideBar = ({ children, sendExpandedStatut }) => {
   const [expanded, setExpanded] = useState(true);
 
-  // When on mobile navbar close
+  // When on mobile sidebar close automatically
   useEffect(() => {
     if (window.innerWidth < 1280) {
       setExpanded(false);
