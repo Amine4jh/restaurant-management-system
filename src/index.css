@@ -28,7 +28,7 @@ input[type="file"],
 input[type="number"],
 input[type="password"],
 select {
-  @apply w-full p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige;
+  @apply w-full sm:text-base text-sm p-2 sm:p-3 outline-0 mt-2 bg-darkGray rounded focus:brightness-80 border border-transparent focus:border-beige;
 }
 input[type="file"] {
   cursor: pointer;

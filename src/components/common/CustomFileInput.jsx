@@ -9,8 +9,8 @@ const CustomFileInput = ({ label, ...props }) => {
   };
 
   return (
-    <div className="w-full mt-5">
-      <label className="cursor-pointer block text-start font-semibold">
+    <div className="w-full sm:mt-5 mt-2">
+      <label className="cursor-pointer block text-start font-semibold sm:text-base text-sm">
         {label}:
       </label>
       <input
