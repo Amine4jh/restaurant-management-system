@@ -1,6 +1,6 @@
 const LoadingCard = () => {
   return (
-    <div className="flex flex-col animate-pulse rounded shadow-lg">
+    <div className="flex flex-col animate-pulse rounded shadow-lg bg-darkGray">
       <div className="w-full h-50 bg-gray-300 rounded-t" />
       <div className="p-5 flex-1">
         <div className="w-full h-8 rounded bg-gray-300 mb-4" />

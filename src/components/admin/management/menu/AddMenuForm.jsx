@@ -3,6 +3,8 @@ import CustomInput from "../../../common/CustomInput";
 import { addMealSchema } from "../../../../schemas";
 import CustomFileInput from "../../../common/CustomFileInput";
 import CustomSelect from "../../../common/CustomSelect";
+import { useEffect, useState } from "react";
+import { fetchCategories } from "../../../../services/categoriesService";
 
 const onSubmit = async (values, actions) => {
   console.log(values);
@@ -11,6 +13,29 @@ const onSubmit = async (values, actions) => {
 };
 
 const AddMenuForm = ({ isOpen }) => {
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [msg, setMsg] = useState("");
+
+  const fetchData = async () => {
+    try {
+      const data = await fetchCategories();
+      if (data.data) {
+        setCategories(data.data.categories);
+        setMsg("Please select meal category...");
+      }
+    } catch (error) {
+      console.error("Error fetching data", error);
+      setMsg("Something Wrong, please try again later...");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <Formik
       initialValues={{
@@ -44,10 +69,13 @@ const AddMenuForm = ({ isOpen }) => {
             name="category"
             placeholder="Select meal category..."
           >
-            <option value="">Please select meal category...</option>
-            <option value="burger">Burger</option>
-            <option value="crepe">Crepe</option>
-            <option value="pizza">Pizza</option>
+            {loading && <option value="">Loading...</option>}
+            {msg && <option value="">{msg}</option>}
+            {categories.length
+              ? categories.map((item) => (
+                  <option value="burger">{item.strCategory}</option>
+                ))
+              : ""}
           </CustomSelect>
           <CustomInput
             label="Description"
